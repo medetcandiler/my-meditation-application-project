@@ -65,12 +65,14 @@ function myApp(){
             if(this.dataset.sound=='./sounds/rain.mp3'){
                 timeSelect.forEach( element => {
                     element.classList.add('whiteBtn')
+                    element.classList.remove('blackBtn')
                     timeDisplay.classList.add('white')
                     timeDisplay.classList.remove('black')
                 })
             }else{
                 timeSelect.forEach( element => {
-                    element.classList.replace('whiteBtn', 'blackBtn')
+                    element.classList.add('blackBtn')
+                    element.classList.remove('whiteBtn')
                     timeDisplay.classList.remove('white')
                     timeDisplay.classList.add('black')
                 })

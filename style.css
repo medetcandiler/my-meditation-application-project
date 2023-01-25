@@ -51,12 +51,12 @@
     font-size: 3rem;
 }
 .defaultBtn{
-    color: #0047AB;
+    color: #00008B;
     font-size: 1.2rem;
     width: 30%;
     height: 10%;
     background-color: transparent;
-    border: 2px solid #0047AB;
+    border: 2px solid #00008B;
     border-radius: 1rem;
     cursor: pointer;
     transition: all .5s;
@@ -81,7 +81,7 @@
     border: 2px solid white;
     border-radius: 1rem;
     cursor: pointer;
-    transition: all .5s;
+    transition: all .3s;
 }
 .whiteBtn:hover{
 
@@ -90,7 +90,16 @@
 .blackBtn:hover{
     border-color: white;
 }
-
+.whiteBtn:focus{
+    -webkit-box-shadow: 0px 4px 37px 18px rgba(255,247,255,1);
+    -moz-box-shadow: 0px 4px 37px 18px rgba(255,247,255,1);
+    box-shadow: 0px 4px 37px 18px rgba(255,247,255,1);
+}
+.blackBtn:focus{
+    -webkit-box-shadow: 0px 4px 37px 18px rgba(10,1,10,1);
+    -moz-box-shadow: 0px 4px 37px 18px rgba(10,1,10,1);
+    box-shadow: 0px 4px 37px 18px rgba(10,1,10,1);
+}
 .sound-picker button{
     width: 10rem;
     height: 10rem;
