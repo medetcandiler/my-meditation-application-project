@@ -47,7 +47,7 @@
 .time-display{
     position: absolute;
     bottom: 4rem;
-    color: antiquewhite;
+    color: black;
     font-size: 3rem;
 }
 .time-select button{
@@ -113,6 +113,7 @@
         width: 300px;
         height: 300px;
     }
+    
 }
 @media( width <= 900px){
     svg{
@@ -126,6 +127,7 @@
     .time-select button{
         font-size: 16px;
     }
+
 }
 @media( width <=600px){
     svg{
@@ -137,6 +139,6 @@
         height: 50px;
     }
     .time-select button{
-        font-size: 12px;
+        font-size: 8px;
     }
 }
