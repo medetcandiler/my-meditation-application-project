@@ -47,10 +47,21 @@
 .time-display{
     position: absolute;
     bottom: 4rem;
-    color: black;
+    color: white;
     font-size: 3rem;
 }
-.time-select button{
+.defaultBtn{
+    color: #0047AB;
+    font-size: 1.2rem;
+    width: 30%;
+    height: 10%;
+    background-color: transparent;
+    border: 2px solid #0047AB;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+.blackBtn{
     color: black;
     font-size: 1.2rem;
     width: 30%;
@@ -61,6 +72,25 @@
     cursor: pointer;
     transition: all .5s;
 }
+.whiteBtn{
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+    height: 10%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+.whiteBtn:hover{
+
+    border-color: black;
+}
+.blackBtn:hover{
+    border-color: white;
+}
+
 .sound-picker button{
     width: 10rem;
     height: 10rem;
@@ -99,6 +129,13 @@
     stroke-dashoffset: 1;
     animation: dash 5s linear alternate infinite;
 }
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+
 @keyframes dash{
     from{
         stroke-dashoffset: 1;

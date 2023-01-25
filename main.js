@@ -4,14 +4,12 @@ function myApp(){
     let outline=document.querySelector('.moving-outline circle')
     let video=document.querySelector('.vid-container video')
 
-
     //sounds buttons
     let sound=document.querySelectorAll('.sound-picker button')
 
     //time display
     let timeDisplay=document.querySelector('.time-display')
     let timeSelect=document.querySelectorAll('.time-select button')
-
 
     //duration
     let duration=600;
@@ -37,18 +35,18 @@ function myApp(){
     }
    //timer innerHTML
    song.ontimeupdate=function(){
-    let currentSongTime= song.currentTime
-    let time= duration - currentSongTime
-    let minutes= Math.floor(time / 60); 
-    let seconds= Math.floor(time % 60); 
-    timeDisplay.textContent= `${minutes}:${seconds}`
-    // if song finishes stop everthing
-    if(currentSongTime >= duration ){
-        song.pause()
-        play.src='./svg/play.svg'
-        outline.classList.remove('animation')
-        timeDisplay.textContent= 0 + ':'+0
-    }
+        let currentSongTime= song.currentTime
+        let time= duration - currentSongTime
+        let minutes= Math.floor(time / 60); 
+        let seconds= Math.floor(time % 60); 
+        timeDisplay.textContent= `${minutes}:${seconds}`
+        // if song finishes stop everthing
+        if( currentSongTime >= duration ){
+            song.pause()
+            play.src='./svg/play.svg'
+            outline.classList.remove('animation')
+            timeDisplay.textContent= 0 + ':'+0
+        }
    }
    // 3, 6, 10 minutes pickers
    timeSelect.forEach( element => {
@@ -64,6 +62,19 @@ function myApp(){
             song.src= this.dataset.sound
             video.src= this.dataset.video
             checkPlaying(song)
+            if(this.dataset.sound=='./sounds/rain.mp3'){
+                timeSelect.forEach( element => {
+                    element.classList.add('whiteBtn')
+                    timeDisplay.classList.add('white')
+                    timeDisplay.classList.remove('black')
+                })
+            }else{
+                timeSelect.forEach( element => {
+                    element.classList.replace('whiteBtn', 'blackBtn')
+                    timeDisplay.classList.remove('white')
+                    timeDisplay.classList.add('black')
+                })
+            }
         })
    })
 }
