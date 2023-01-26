@@ -13,7 +13,8 @@ While I was creating my meditation app project my biggest aim was using JavaScri
 
 [My Patika.dev Profile](https://app.patika.dev/meddo)
 ---
-Sample of the project: Note : I am aware of that you cannot hear the super relaxing sounds from the project. If you would like to hear and listen them when you want to relax, you can find them above in the sounds file
+Sample of the project: 
+Note : I am aware of that you cannot hear the super relaxing sounds from the project. If you would like to hear and listen them when you want to relax, you can find them above in the sounds file.
 
 ![sample-of-my-project](https://github.com/medetcandiler/my-meditation-application-project/blob/main/sample-of-the-project.gif)
 
