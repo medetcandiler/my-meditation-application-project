@@ -16,9 +16,6 @@ Sample of the project:
 
 ![sample-of-my-project](https://github.com/medetcandiler/my-meditation-application-project/blob/main/sample-of-the-project.gif)
 
----
-
 ## Prepared by
 **Medetcan Diler**
 
----
