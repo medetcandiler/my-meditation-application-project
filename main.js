@@ -35,7 +35,8 @@ function myApp(){
     }
    //timer innerHTML
    song.ontimeupdate=function(){
-        let currentSongTime= song.currentTime
+        let currentSongTime= this.currentTime
+        // console.log(currentSongTime);
         let time= duration - currentSongTime
         let minutes= Math.floor(time / 60); 
         let seconds= Math.floor(time % 60); 
